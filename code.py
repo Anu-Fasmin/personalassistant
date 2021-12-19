@@ -35,7 +35,7 @@ def wishMe():
     speak("I am jo,What can I do for you")
 
 def takeCommand():
-    #This takes microphone input from the user and returns string output
+    
 
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -44,7 +44,7 @@ def takeCommand():
         audio = r.listen(source)
 
     try:
-        print("Recognizing...")
+        print("Recognizing....")
         query = r.recognize_google(audio, language='en-in')
         print(f"You said: {query}\n")
 
@@ -60,7 +60,7 @@ if __name__ == "__main__":
     # if 1:
         query = takeCommand().lower()
 
-        # Logic for executing tasks based on query
+        
         if 'wikipedia' in query:
             speak('Searching Wikipedia...')
             query = query.replace("wikipedia", "")
@@ -113,7 +113,7 @@ if __name__ == "__main__":
              print(info)
              speak(info)
 
-        elif 'are you single' in query:
+        elif 'are you single?' in query:
              speak('I am in a relationship with wifi')
 
         elif 'my birthday' in query:
