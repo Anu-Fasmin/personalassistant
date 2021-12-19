@@ -1,1 +1,1 @@
-# Jo- The personal assistant
+SHE HACK PROJECT -  # JO the personal assitant
