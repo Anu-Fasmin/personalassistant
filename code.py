@@ -32,7 +32,7 @@ def wishMe():
     else:
         speak("Good Evening")
 
-    speak("I am jo,What can I do for you")
+    speak("I am jo, your personal assitant, please tell me how can i help")
 
 def takeCommand():
     
